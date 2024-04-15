@@ -8,6 +8,11 @@ form.addEventListener('submit', async (event) => {
 
     try {
         // Use a CORS proxy to avoid CORS policy issues
+        const value = url.value;
+        if (!value || value.trim() === '') {
+            alert('Please enter a URL');
+            return;
+        }
         const response = await fetch(`https://cors-anywhere.herokuapp.com/${url.value}`);
         const data = await response.text();
 
