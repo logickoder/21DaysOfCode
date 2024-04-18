@@ -59,6 +59,16 @@ form .field {
     gap: 20px;
 }
 
+#tasks #empty {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+    color: #6c757d;
+    text-transform: capitalize;
+    font-style: oblique;
+    font-family: cursive;
+}
+
 #task {
     display: flex;
     flex-direction: row;

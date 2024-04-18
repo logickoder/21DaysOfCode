@@ -1,10 +1,7 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
 const tasks = document.getElementById('tasks');
-const data = [
-    {text: 'Task 1', done: false},
-    {text: 'Task 2', done: true},
-]
+const data = []
 
 function createListItem(item, onRemove, onMark) {
     const body = document.createElement('li');
@@ -31,6 +28,15 @@ function createListItem(item, onRemove, onMark) {
 function populateTasks() {
     // Clear the tasks list
     tasks.innerHTML = '';
+
+    if (data.length === 0) {
+        const empty = document.createElement('li');
+        empty.id = 'empty';
+        empty.textContent = 'Such empty';
+        tasks.appendChild(empty);
+        return;
+    }
+
     for (let i = 0; i < data.length; ++i) {
         const item = createListItem(data[i], () => {
             data.splice(i, 1);
