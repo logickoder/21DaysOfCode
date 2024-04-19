@@ -3,7 +3,7 @@ function objectToString(object, separator = '/') {
 }
 
 function objectsToString(objects, separator = '/') {
-    return objects.map(object => objectToString(object));
+    return objects.map(object => objectToString(object, separator));
 }
 
 function test() {
