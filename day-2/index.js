@@ -56,7 +56,7 @@ form.addEventListener('submit', async (event) => {
 
     const value = input.value;
     if (!value || value.trim() === '') {
-        alert('Please enter a URL');
+        alert('Please enter a task');
         return;
     }
 
