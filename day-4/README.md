@@ -10,4 +10,4 @@
 
 ## Submission:
 
-- https://logickoder.github.io/21DaysOfCode/day-3/
+- https://replit.com/@logickoder/21DaysOfCode#day-4/index.js

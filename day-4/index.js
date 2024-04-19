@@ -1,9 +1,9 @@
 function objectToString(object, separator = '/') {
-    return Object.entries(object).map(([key, value]) => `${key}: ${value}`).join(separator);
+    return Object.values(object).join(separator);
 }
 
 function objectsToString(objects, separator = '/') {
-    return objects.map(object => objectToString(object)).join(separator);
+    return objects.map(object => objectToString(object));
 }
 
 function test() {
@@ -12,3 +12,5 @@ function test() {
     }, {name: 'BBBgh', age: 'twenty three', level: 'year 1'}]
     console.log(objectsToString(objects));
 }
+
+test()
