@@ -11,3 +11,9 @@
 ## Submission:
 
 - https://replit.com/@logickoder/21DaysOfCode#day-4/index.js
+
+## Run:
+
+```bash
+node day-4/index.js
+```
