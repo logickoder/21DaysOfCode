@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Weather App</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<nav class="hidden">
+    <p id="location"></p>
+</nav>
+<main>
+    <form id="form">
+        <div class="field">
+            <label for="input"></label><input id="input" placeholder="Enter city name or zip code " type="text">
+        </div>
+        <button class="material-icons" id="search-button" type="submit">search</button>
+    </form>
+    <div id="content"></div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
