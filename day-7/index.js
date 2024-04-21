@@ -80,10 +80,10 @@ async function populateMovies() {
     const movies = await getMovies();
 
     movies.forEach(movie => {
-        console.log(movie)
         const movieElement = document.createElement('div');
         movieElement.className = 'movie';
         movieElement.setAttribute('data-id', movie.id);
+
         const title = document.createElement('h3');
         title.textContent = movie.title;
         const year = document.createElement('p');
@@ -91,7 +91,12 @@ async function populateMovies() {
         const genre = document.createElement('p');
         genre.textContent = movie.genre;
 
-        movieElement.append(title, year, genre);
+        const deleteButton = document.createElement('button');
+        deleteButton.className = 'delete';
+        deleteButton.textContent = 'X';
+        deleteButton.addEventListener('click', () => deleteMovie(movie.id).then(populateMovies));
+
+        movieElement.append(title, year, genre, deleteButton);
         content.appendChild(movieElement);
     });
 }
