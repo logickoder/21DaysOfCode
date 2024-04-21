@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Movie Library</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+<main>
+    <section>
+        <div class="title">
+            <h1>Watchlist</h1>
+            <p>Keep track of your favorite movies</p>
+        </div>
+        <form>
+            <div class="field">
+                <label for="title">Title</label><input id="title" placeholder="Shinjeki no Kyojin" type="text">
+            </div>
+
+            <div class="field">
+                <label for="year">Movie Year</label><input id="year" placeholder="2013" type="text">
+            </div>
+
+            <div class="field">
+                <label for="genre">Genre</label><input id="genre" placeholder="Action, Dark Fantasy" type="text">
+            </div>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+    <section id="content"></section>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
