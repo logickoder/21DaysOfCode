@@ -164,20 +164,8 @@ document.getElementsByTagName('form')[0].addEventListener('submit', async (event
 
             time--;
         }, 1000);
-
-        return;
     } else if (button.innerText === 'Stop Countdown') {
         stopInterval();
-        return;
-    }
-
-    try {
-
-    } catch (error) {
-        console.error(error);
-        alert('Error adding movie');
-    } finally {
-        button.innerText = 'Add';
     }
 });
 
