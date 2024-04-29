@@ -11,3 +11,4 @@
 - [Day 7: JavaScript Functions & Objects](https://logickoder.github.io/21DaysOfCode/day-7/)
 - [Day 8: It’s a Palindrome!](https://replit.com/@logickoder/21DaysOfCode#day-8/index.js)
 - [Day 9: Pascal’s Triangle](https://replit.com/@logickoder/21DaysOfCode#day-9/index.js)
+- [Day 10: Animation & Effects](https://logickoder.github.io/21DaysOfCode/day-10/)
